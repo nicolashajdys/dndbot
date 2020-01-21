@@ -1,0 +1,58 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "can you please python links",
+        "intent": "book",
+        "entities": []
+      },
+      {
+        "text": "best youtube channel for python",
+        "intent": "youtube",
+        "entities": []
+      },
+      {
+        "text": "machine learning python book name",
+        "intent": "machine_learning",
+        "entities": []
+      },
+  {
+        "text": "I want to attack with my axe",
+        "intent": "attack",
+        "entities": []
+      },
+      {
+        "text": "I want to attack with my sword",
+        "intent": "attack",
+        "entities": []
+      },
+      {
+        "text": "I want to attack with my weapon",
+        "intent": "attack",
+        "entities": []
+      },
+       {
+        "text": "I'm going to swing my axe",
+        "intent": "attack",
+        "entities": [
+          {
+            "start": 22,
+            "end": 25,
+            "value": "axe",
+            "entity": "weapon"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "goodbye",
+        "text": "end"
+      },
+      {
+        "intent": "book",
+        "text": "can you please python links"
+      },
+      {
+        "intent": "youtube",
+        "text": "best youtube channel for python"
+      },
+      {
+        "intent": "machine_learning",
+        "text": "machine learning python book name"
+      },
+      {
+        "intent": "attack",
+        "text": "I want to attack with my axe"
+      },
+      {
+        "intent": "attack",
+        "text": "I want to attack with my sword"
+      },
+      {
+        "intent": "attack",
+        "text": "I want to attack with my weapon"
+      },
+      {
+        "intent": "attack",
+        "entities": [
+          {
+            "start": 22,
+            "end": 25,
+            "value": "axe",
+            "entity": "weapon"
+          }
+        ],
+        "text": "I'm going to swing my axe"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}

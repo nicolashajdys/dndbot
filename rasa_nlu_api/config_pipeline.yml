@@ -1,0 +1,27 @@
+#language: "en"
+#
+#pipeline:
+## - name: "tokenizer_whitespace"
+##- name: "intent_featurizer_count_vectors"
+##- name: "intent_classifier_tensorflow_embedding"
+##- name: "supervised_embeddings"
+
+language: "en"
+
+pipeline:
+- name: "SpacyNLP"
+  return_sequence: true
+- name: "SpacyTokenizer"
+  return_sequence: true
+- name: "SpacyFeaturizer"
+  return_sequence: true
+- name: "RegexFeaturizer"
+  return_sequence: true
+- name: "CRFEntityExtractor"
+  return_sequence: true
+- name: "EntitySynonymMapper"
+  return_sequence: true
+- name: "SklearnIntentClassifier"
+  features: [
+    return_sequence: true
+  ]

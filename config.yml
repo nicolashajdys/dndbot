@@ -1,0 +1,25 @@
+language: "en"
+
+pipeline:
+- name: "SpacyNLP"
+  return_sequence: true
+- name: "SpacyTokenizer"
+  return_sequence: true
+- name: "SpacyFeaturizer"
+  return_sequence: true
+- name: "RegexFeaturizer"
+  return_sequence: true
+- name: "CRFEntityExtractor"
+  return_sequence: true
+- name: "EntitySynonymMapper"
+  return_sequence: true
+- name: "SklearnIntentClassifier"
+  features: [
+    return_sequence: true
+  ]
+
+policies:
+  - name: FormPolicy
+  - name: MemoizationPolicy
+  - name: KerasPolicy
+  - name: MappingPolicy

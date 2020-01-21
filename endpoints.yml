@@ -1,0 +1,4 @@
+action_endpoint:
+  url: "http://localhost:5055/webhook"
+  #url: "https://discordapp.com/api/webhooks/668903464914649148/gcfXM4TlsTiGgFUTpY-SbJXLDX0A2tZ55KU8xFU7aSOl_vbI8eVv-uN7I-MiRSzMqgYK"
+  #url: "http://885f4e15.ngrok.io/webhooks/facebook/webhook"

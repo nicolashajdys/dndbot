@@ -1,0 +1,18 @@
+---
+actions:
+  - utter_greet
+  - utter_goodbye
+forms:
+  - character_form
+intents:
+  - create_character
+slots:
+  name:
+    auto_fill: false
+    type: unfeaturized
+templates:
+  utter_ask_name:
+    -
+      text: "What will be your characters name?"
+  utter_submit_buy:
+    - text: "Good. One of our agents will be in touch with you shortly."
